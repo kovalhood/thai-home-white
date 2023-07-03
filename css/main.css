@@ -194,7 +194,7 @@ address {
   position: relative;
   z-index: 5;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 375px) {
   .container {
     width: 375px;
   }
@@ -239,14 +239,18 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: inherit;
-  font-size: 18px;
+  font-size: 17px;
+  width: 100%;
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
   color: #F6F6F6;
   background-color: #1F1F1F;
-  padding: 15px 23px;
+  padding: 15px 15px;
   border: 3px solid #1F1F1F;
   cursor: pointer;
   -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -260,6 +264,13 @@ address {
 .button:hover, .button:focus {
   background-color: transparent;
   color: #1F1F1F;
+}
+@media screen and (min-width: 375px) {
+  .button {
+    font-size: 18px;
+    padding: 15px 23px;
+    width: unset;
+  }
 }
 .button--header {
   display: -webkit-box;
