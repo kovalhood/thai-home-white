@@ -33,6 +33,8 @@
 .section-title__wrapper {
   display: flex;
   align-items: baseline;
+  position: relative;
+  z-index: 10;
 }
 
 .section__title--black {

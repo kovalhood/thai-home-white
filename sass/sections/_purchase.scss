@@ -1,0 +1,342 @@
+.purchase-container {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+
+    @media screen and (min-width: $tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 563px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        height: 640px;
+    }
+}
+
+.purchase__image-wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
+    
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+}
+
+.purchase__image-wrapper--mob{
+    width: 330px;
+    height: 330px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.purchase__image-wrapper--mob img{
+    width: 100%;
+    height: 100%;
+}
+
+.container--gallery .slick-prev,
+.container--gallery .slick-next {
+    position: absolute;
+    top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    font-size: 0;
+    border: 2px solid $accent-color;
+    background-color: $accent-color;
+    transition: $main-transition;
+    color: $white-color;
+    z-index: 300;
+}
+
+.container--gallery .slick-prev {
+    right: 120px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: transparent;
+        color: $accent-color;
+    }
+}
+
+.container--gallery .slick-next {
+    right: 40px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: transparent;
+        color: $accent-color;
+    }
+}
+
+.container--gallery .slick-prev:before {
+    content: "<";
+    margin-right: 3px;
+    margin-bottom: 1px;
+    color: inherit;
+    font-size: 30px;
+}
+
+.container--gallery .slick-next:before {
+    content: ">";
+    margin-left: 1px;
+    margin-bottom: 1px;
+    color: inherit;
+    font-size: 30px;
+}
+
+.gallery-mobile__wrapper {
+    @media screen and (min-width: $desktop) {
+        display: none;
+    }
+}
+
+.gallery-mob__image {
+    width: 315px;
+    margin-right: 15px;
+
+    @media screen and (min-width: $tablet) {
+        width: 508px;
+        margin-right: 25px;
+    }
+}
+
+/* Limits */
+.slick-list {
+    margin-bottom: 2px;
+}
+
+/* Slides */
+.slick-track {
+    display: flex;
+}
+
+/* Dots */
+ul.slick-dots {
+    margin: 0;
+    padding: 0;
+}
+
+.slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-dots li {
+    list-style: none;
+    margin: 0;
+}
+
+/* Dot element */
+.purchase-container .slick-dots li button {
+    position: relative;
+    font-size: 0;
+    width: 82.5px;
+    height: 4px;
+    border: none;
+    background-color: rgba(31, 31, 31, 0.30);
+    cursor: pointer;
+
+    @media screen and (min-width: $tablet) {
+        width: 81px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: 0;
+        width: 25px;
+        height: 30px;
+    }
+}
+
+.purchase-container .slick-dots li.slick-active button {
+    font-size: 0;
+    width: 82.5px;
+    height: 4px;
+    border: none;
+    background-color: $accent-color;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (min-width: $tablet) {
+        width: 79px;
+    }
+}
+
+.slick-dots li button::after {
+    width: 0;
+    height: 0;
+}
+
+.purchase__image-wrapper--tab {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+        position: absolute;
+        top: 0;
+        right: 40px;
+        display: block;
+        width: 338px;
+        height: 563px;
+        overflow: hidden;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: none;
+    }
+}
+
+.purchase__image-tab-1 {
+    position: absolute;
+    right: 71px;
+    width: 185px;
+    height: 245px;
+    z-index: 3;
+}
+
+.purchase__image-tab-2 {
+    position: absolute;
+    top: 230px;
+    right: 0;
+    width: 158px;
+    height: 155px;
+    z-index: 4;
+}
+
+.purchase__image-tab-3 {
+    position: absolute;
+    right: 60px;
+    bottom: 0;
+    width: 166px;
+    height: 241px;
+    z-index: 1;
+}
+
+.purchase__image-tab-4 {
+    position: absolute;
+    top: 205px;
+    left: 0;
+    width: 148px;
+    height: 214px;
+    z-index: 2;
+}
+
+.purchase__image-wrapper--desk {
+    display: none;
+
+    @media screen and (min-width: $desktop) {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        display: block;
+        width: 575px;
+        height: 640px;
+    }
+}
+
+.purchase__image-desk-1 {
+    position: absolute;
+    right: 193px;
+    width: 243px;
+    height: 296px;
+    z-index: 3;
+}
+
+.purchase__image-desk-2 {
+    position: absolute;
+    top: 250px;
+    right: 0;
+    width: 310px;
+    height: 220px;
+    z-index: 4;
+}
+
+.purchase__image-desk-3 {
+    position: absolute;
+    right: 193px;
+    bottom: 0;
+    width: 234px;
+    height: 282px;
+    z-index: 1;
+}
+
+.purchase__image-desk-4 {
+    position: absolute;
+    top: 214px;
+    left: -60px;
+    width: 254px;
+    height: 305px;
+    z-index: 2;
+}
+
+.purchase__text-wrapper {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.purchase__subheading {
+    margin-top: 10px;
+    color: $black-color;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 20px;
+        width: 486px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 20px;
+        font-size: 25px;
+        width: 600px;
+    }
+
+    &--highlight {
+        font-weight: 700;
+    }
+}
+
+.purchase__description-wrapper {
+    margin-top: 40px;
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 0;
+    }
+}
+
+.purchase__text {
+    margin-bottom: 20px;
+    color: $black-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 18px;
+        width: 338px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 30px;
+        font-size: 20px;
+        width: 575px;
+    }
+
+    &--highlight {
+        font-weight: 700;
+    }
+}
