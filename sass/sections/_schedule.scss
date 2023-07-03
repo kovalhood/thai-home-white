@@ -1,0 +1,93 @@
+.schedule-container {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.schedule__text-wrapper {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+        width: 338px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 600px;
+    }
+}
+
+.schedule__image-wrapper--mob {
+    width: 100%;
+    height: 429px;
+    overflow: hidden;
+    margin-top: 20px;
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+}
+
+.schedule__image-wrapper--tab {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+        position: absolute;
+        top: -100px;
+        left: 50%;
+        display: block;
+        width: 50vw;
+        height: 582px;
+        overflow: hidden;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: none;
+    }
+}
+
+.schedule__image-wrapper--desk {
+    display: none;
+
+    @media screen and (min-width: $desktop) {
+        position: absolute;
+        top: -120px;
+        left: 53.4%;
+        display: block;
+        width: 50vw;
+        height: 728px;
+        overflow: hidden;
+    }
+}
+
+.schedule__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1.01;
+}
+
+.schedule__text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 20px;
+        width: 560px;
+    }
+
+    &--highlight {
+        font-weight: 700;
+    }
+}
