@@ -4,9 +4,9 @@
             <path d="M29.538 16c0 8.157-6.612 14.769-14.769 14.769s-14.769-6.612-14.769-14.769c0-8.157 6.612-14.769 14.769-14.769s14.769 6.612 14.769 14.769z"></path>
         </symbol>
         <symbol id="arrow" viewBox="0 0 49 32">
-            <path fill="none" stroke="#1f1f1f" style="stroke: var(--color1, #1f1f1f)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="5.8182" d="M2.909 1.54v17.455"></path>
-            <path fill="none" stroke="#1f1f1f" style="stroke: var(--color1, #1f1f1f)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="5.8182" d="M0 18.995h40.727"></path>
-        <path d="M49.283 18.909l-17.326 10.003v-20.006l17.326 10.003z"></path>
+            <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="5.8182" d="M2.909 1.54v17.455"></path>
+            <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="5.8182" d="M0 18.995h40.727"></path>
+            <path d="M49.283 18.909l-17.326 10.003v-20.006l17.326 10.003z"></path>
         </symbol>
     </defs>
 </svg>

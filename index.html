@@ -19,8 +19,39 @@
   </head>
 
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header class="header">
+      <div class="container header-container">
+        <p class="logo">THAI HOME</p>
+
+        <div class="header__controls">
+          <nav class="header-navigation">
+            <ul class="header-navigation__list list">
+              <li class="header-navigation__item">
+                <svg class="header-navigation__icon" width="12" height="12">
+                  <use href="./images/icons.svg#bullet"></use>
+                </svg>
+                <a href="#who-am-i" class="header-navigation__link link"
+                  >About Me</a
+                >
+              </li>
+              <li class="header-navigation__item">
+                <svg class="header-navigation__icon" width="12" height="12">
+                  <use href="./images/icons.svg#bullet"></use>
+                </svg>
+                <a href="#about" class="header-navigation__link link"
+                  >About the project</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="button--header">
+            <svg class="button__icon" width="16" height="10">
+              <use href="./images/icons.svg#arrow"></use>
+            </svg>
+            Schedule a consultation
+          </button>
+        </div>
+      </div>
+    </header>
   </body>
 </html>

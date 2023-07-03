@@ -12,12 +12,37 @@
   transition: $main-transition;
 
   &__icon{
+    margin-right: 7px;
     fill: currentColor;
+    stroke: currentColor;
   }
 
   &:hover,
   &:focus{
     background-color: transparent;
     color: $black-color;
+  }
+
+  &--header{
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-size: 18px;
+    color: $black-color;
+    font-weight: 600;
+    line-height: normal;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    cursor: pointer;
+    transition: $main-transition;
+
+    &:hover,
+    &:focus {
+      text-decoration-color: $black-color;
+    }
   }
 }
