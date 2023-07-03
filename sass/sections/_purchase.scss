@@ -277,6 +277,16 @@ ul.slick-dots {
     z-index: 2;
 }
 
+.section-title__wrapper--purchase{
+    @media screen and (min-width: $tablet) {
+        margin-top: -10px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-top: -20px;
+    }
+}
+
 .purchase__text-wrapper {
     @media screen and (min-width: $tablet) {
         display: flex;

@@ -18,6 +18,16 @@
     }
 }
 
+.section-title__wrapper--who-am-i{
+    @media screen and (min-width: $tablet) {
+        margin-top: -20px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-top: -38px;
+    }
+}
+
 .who-am-i__image-wrapper--mob {
     position: relative;
     width: 100%;

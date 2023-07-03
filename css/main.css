@@ -536,6 +536,17 @@ address {
   }
 }
 
+@media screen and (min-width: 786px) {
+  .section-title__wrapper--who-am-i {
+    margin-top: -20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section-title__wrapper--who-am-i {
+    margin-top: -38px;
+  }
+}
+
 .who-am-i__image-wrapper--mob {
   position: relative;
   width: 100%;
@@ -1004,6 +1015,17 @@ ul.slick-dots {
   width: 254px;
   height: 305px;
   z-index: 2;
+}
+
+@media screen and (min-width: 786px) {
+  .section-title__wrapper--purchase {
+    margin-top: -10px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section-title__wrapper--purchase {
+    margin-top: -20px;
+  }
 }
 
 @media screen and (min-width: 786px) {
